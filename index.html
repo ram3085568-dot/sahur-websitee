@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sahur Chubra 😎</title>
+
+<style>
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    min-height:100vh;
+    font-family:Arial, sans-serif;
+    background:linear-gradient(135deg,#080808,#252525,#101010);
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+.card{
+    width:100%;
+    max-width:430px;
+    background:rgba(255,255,255,0.08);
+    border:1px solid rgba(255,255,255,0.15);
+    border-radius:25px;
+    padding:30px 22px;
+    text-align:center;
+    box-shadow:0 20px 60px rgba(0,0,0,0.6);
+}
+
+.badge{
+    display:inline-block;
+    padding:8px 15px;
+    border-radius:30px;
+    background:white;
+    color:#111;
+    font-size:12px;
+    font-weight:bold;
+}
+
+h1{
+    font-size:36px;
+    margin:18px 0 5px;
+}
+
+.subtitle{
+    color:#bbb;
+    margin-bottom:25px;
+}
+
+.info{
+    text-align:left;
+    background:rgba(255,255,255,0.07);
+    padding:18px;
+    border-radius:18px;
+    line-height:2;
+}
+
+.message{
+    margin-top:20px;
+    padding:18px;
+    border-left:4px solid white;
+    background:rgba(255,255,255,0.05);
+    border-radius:10px;
+    font-style:italic;
+    line-height:1.6;
+}
+
+button{
+    margin-top:25px;
+    padding:14px 25px;
+    border:none;
+    border-radius:30px;
+    background:white;
+    color:#111;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+button:active{
+    transform:scale(0.95);
+}
+
+#surprise{
+    display:none;
+    margin-top:20px;
+    padding:18px;
+    border-radius:15px;
+    background:rgba(255,255,255,0.1);
+    font-size:20px;
+    animation:pop .4s ease;
+}
+
+@keyframes pop{
+    0%{transform:scale(0);}
+    100%{transform:scale(1);}
+}
+
+.footer{
+    margin-top:25px;
+    font-size:12px;
+    color:#777;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+    <div class="badge">⭐ SPECIAL FRIEND PROFILE ⭐</div>
+
+    <h1>Sahur Chubra</h1>
+
+    <div class="subtitle">
+        The one and only Sahur 😎
+    </div>
+
+    <div class="info">
+        👨 <b>Father:</b> Akash<br>
+        👩 <b>Mother:</b> Prianka Chopra<br>
+        📍 <b>City:</b> Mumbai<br>
+        🎂 <b>Birthday:</b> 17 October
+    </div>
+
+    <div class="message">
+        “Amader priyo Sahur, Akash er ekmatro sontan,
+        amader sobar bhaipo, Ghosh parar jamai.”
+    </div>
+
+    <button onclick="surprise()">
+        DON'T CLICK 😈
+    </button>
+
+    <div id="surprise">
+        😂 Tumi abar click kore dile!<br><br>
+        <b>SAHUR CAUGHT! 🤣</b>
+    </div>
+
+    <div class="footer">
+        Made with ❤️ for our favourite Sahur
+    </div>
+
+</div>
+
+<script>
+function surprise(){
+
+    document.getElementById("surprise").style.display="block";
+
+}
+</script>
+
+</body>
+</html>
